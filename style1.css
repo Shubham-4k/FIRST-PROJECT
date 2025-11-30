@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(lgn.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 250px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+font-size: 60px;
+margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px; 
+}
+.container {
+    display: flex;
+ justify-content: center;
+}
+.home .wrapper-login {
+    position: relative;
+    width: 440px;
+}
+.wrapper-login h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.wrapper-login .input-box {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    margin: 40px 0;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 25px 0 45px;
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+    font-size: .8em;
+    top: -14px;
+    left: 17px;
+}
+.input-box .icon{
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    font-size: 1.2em;
+    color: #fff;
+}
+.wrapper-login .remember-forgot {
+    font-size: .9em;
+    color: #fff;
+    font-weight: 500;
+    margin: -25px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+.remember-forgot label input {
+    accent-color: #1e0b04;
+}
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.wrapper-login .btn {
+    width: 104%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #a8fffb, #a8fffb);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    font-size: 1em;
+    color: #000000;
+    font-weight: 500;
+}
+.wrapper-login .register-link {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 30px 0;
+}
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover {
+    text-decoration: underline;
+}
